@@ -16,8 +16,16 @@ COPY ./symfony /usr/local/bin/symfony
 RUN apk --no-cache --update add \
     php-common \
     php-cli \
+    php-curl \
     php-json \
+    php-phar \
     php-zlib \
     php-ctype \
     && chmod 777 /usr/local/bin/symfony
 VOLUME [ "/project" ]
+
+WORKDIR /project
+
+ENTRYPOINT [ "symfony" ]
+
+# CMD [ "new", "symfony", "2.8" ]
