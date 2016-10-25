@@ -11,7 +11,7 @@ docker run -it -rm \
     -v [path/to/install/dir]:/project \
     --name symfony-installer \
     gruen/symfony-installer \
-    symfony [options]
+    new [project_directory] [options]
 ```
 
 Create a new Symfony 2.8 project in the current directory
@@ -20,5 +20,5 @@ docker run -it -rm \
     -v $(pwd):/project \
     --name symfony-installer \
     gruen/symfony-installer \
-    symfony new symfony 2.8
+    new ./ 2.8
 ```
