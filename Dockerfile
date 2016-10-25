@@ -8,7 +8,7 @@
 #     -v [/path/to/symfony/directory]:/project \
 #     --name symfony-installer \
 #     gruen/symfony-installer \
-#     symfony [commands]
+#     new [directory] [commands]
 ###########################################################
 FROM alpine:3.3
 MAINTAINER Darren Green <darren@gruen.site>
